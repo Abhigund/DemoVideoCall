@@ -1,7 +1,3 @@
-body {
-  margin: 0px;
-  padding: 0px;
-}
 .button-container {
   display: flex;
   justify-content: center;
@@ -11,28 +7,48 @@ body {
   left: 50%;
   transform: translateX(-50%);
   flex-direction: column;
-  align-items: center;
   margin: 0 auto;
   width: 100%;
-  padding-bottom: 20px;
-  background: rgb(195, 187, 187);
+  height: 100px;
+  /* padding-bottom: 20px; */
+  /* background:  rgb(195, 187, 187); */
+  background-color: pink;
 }
-.three-buttons-container {
+#three-button-container {
   display: none;
+  /* height: 100%; */
+  /* background-color: red; */
 }
 .container {
   height: 100vh;
   width: 100vw;
 }
 .callButton {
-  background-color: rgb(79, 182, 79);
+  background-color: #4fb64f;
 }
-.microphone-button {
-  background: rgb(0, 0, 0);
+
+.btn-makeCall {
+  background-color: rgba(79, 182, 79, 1);
 }
-.end-call-button {
-  background-color: rgb(201, 63, 63);
+
+.btn-makeCall:hover {
+  background-color: rgba(79, 182, 79, 0.5); /* Adjust opacity as needed */
 }
+.btn-endCall {
+  background-color: rgba(201, 63, 63, 1);
+}
+
+.btn-endCall:hover {
+  background-color: rgba(201, 63, 63, 0.7);
+}
+.btn-muteUnmuteCall {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.btn-muteUnmuteCall:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 @media (min-width: 770px) {
   .button-container {
     flex-direction: row;
@@ -46,4 +62,28 @@ body {
   .btn-lg {
     width: 250px;
   }
+}
+@media (max-width: 770px) {
+  .signal-container {
+    display: none;
+  }
+}
+
+/* Speed */
+.signal-indicator-icon {
+  display: flex;
+  float: right;
+}
+
+.speed-type {
+  font-size: 10pt;
+}
+
+.signal-container {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  height: 100%;
+  display: flex;
 }

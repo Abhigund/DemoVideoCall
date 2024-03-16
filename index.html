@@ -17,45 +17,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="container">
+    <table class="signal-strength-indicator">
+      <tbody>
+        <tr>
+          <th class="speed-type">Download</th>
+          <td class="speed-value">High</td>
+        </tr>
+        <tr>
+          <th class="speed-type">Upload</th>
+          <td class="speed-value">Low</td>
+        </tr>
+      </tbody>
+    </table>
     <div class="button-container">
       <div
-        class="row justify-content-center mt-5"
+        class="row justify-content-center"
         id="three-button-container"
         style="display: none"
       >
-        <div class="col-auto">
-          <button
-            type="button"
-            class="btn btn-primary microphone-button btn-lg"
-          >
+        <div class="col-auto call-buttons">
+          <button type="button" class="btn btn-primary btn-muteUnmuteCall btn-lg">
             <i class="fa-solid fa-microphone"></i>
           </button>
         </div>
-        <div class="col-auto">
+        <div class="col-auto call-buttons">
           <button
             type="button"
             id="end-call-button"
-            class="btn btn-primary end-call-button btn-lg"
+            class="btn btn-primary btn-endCall btn-lg"
           >
             <i class="fa-solid fa-phone-slash"></i>
           </button>
         </div>
-        <div class="col-auto">
+        <div class="col-auto call-buttons">
           <button type="button" class="btn btn-primary btn-lg">
             <i class="fa-solid fa-video"></i>
           </button>
         </div>
       </div>
-      <div class="row justify-content-center mt-3">
-        <div class="col-auto">
+      <div
+        class="row justify-content-center"
+        style="display: flex"
+        id="callButton"
+      >
+        <div class="col-auto call-buttons">
           <button
             type="button"
-            id="callButton"
-            class="btn btn-primary btn-lg callButton"
+            class="btn btn-primary btn-makeCall btn-lg callButton"
           >
             <i class="fa-solid fa-phone"></i>
           </button>
         </div>
+      </div>
+      <div class="signal-container">
+        <i class="fa-solid fa-signal signal-indicator-icon"></i>
       </div>
     </div>
     <script src="main.js"></script>
