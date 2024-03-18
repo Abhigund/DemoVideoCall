@@ -19,10 +19,10 @@
   /* height: 100%; */
   /* background-color: red; */
 }
-.container {
+/* .container {
   height: 100vh;
   width: 100vw;
-}
+} */
 .callButton {
   background-color: #4fb64f;
 }
@@ -86,4 +86,41 @@
   right: 0;
   height: 100%;
   display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline;
+  margin-left: 20px; /* Adjust the spacing between buttons */
+}
+
+.nav-list li:first-child {
+  margin-left: 0; /* No margin for the first button */
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  text-decoration: underline;
 }

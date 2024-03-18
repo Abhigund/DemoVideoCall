@@ -16,19 +16,21 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="container">
-    <table class="signal-strength-indicator">
-      <tbody>
-        <tr>
-          <th class="speed-type">Download</th>
-          <td class="speed-value">High</td>
-        </tr>
-        <tr>
-          <th class="speed-type">Upload</th>
-          <td class="speed-value">Low</td>
-        </tr>
-      </tbody>
-    </table>
+  <body >
+    <header class="header">
+      <div class="logo">
+        <!-- Your logo image goes here -->
+        <img src="assets/Hospital.png" alt="Logo" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="button-container">
       <div
         class="row justify-content-center"
@@ -36,7 +38,10 @@
         style="display: none"
       >
         <div class="col-auto call-buttons">
-          <button type="button" class="btn btn-primary btn-muteUnmuteCall btn-lg">
+          <button
+            type="button"
+            class="btn btn-primary btn-muteUnmuteCall btn-lg"
+          >
             <i class="fa-solid fa-microphone"></i>
           </button>
         </div>
@@ -69,9 +74,9 @@
           </button>
         </div>
       </div>
-      <div class="signal-container">
+      <!-- <div class="signal-container">
         <i class="fa-solid fa-signal signal-indicator-icon"></i>
-      </div>
+      </div> -->
     </div>
     <script src="main.js"></script>
   </body>
