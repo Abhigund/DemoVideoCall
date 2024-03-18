@@ -14,9 +14,18 @@
       src="https://kit.fontawesome.com/661c249f27.js"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      src="./scripts/AgoraRTC_N-4.20.1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+    src="./scripts/scripts.js"
+  ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body >
+  <body>
     <header class="header">
       <div class="logo">
         <!-- Your logo image goes here -->
@@ -31,6 +40,22 @@
         </ul>
       </nav>
     </header>
+
+    <h1>
+      Video Call Demo<br /><small style="font-size: 14pt"
+        >Powered by Agora.io</small
+      >
+    </h1>
+
+    <p>App id : <input type="text" id="app-id" value="" /></p>
+    <button id="start">Start</button>
+
+    <h4>My Feed :</h4>
+    <div id="me"></div>
+
+    <h4>Remote Feeds :</h4>
+    <div id="remote-container"></div>
+
     <div class="button-container">
       <div
         class="row justify-content-center"

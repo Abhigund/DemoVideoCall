@@ -11,3 +11,5 @@ endCallButton.addEventListener("click", () => {
   threeButtonsContainer.style.display = "none";
   greenButton.style.display = "flex";
 });
+
+
